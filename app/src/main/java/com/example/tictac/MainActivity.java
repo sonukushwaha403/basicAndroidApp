@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
               //  Toast.makeText(this, winner, Toast.LENGTH_LONG).show();
                 Button playAgainButton=(Button) findViewById(R.id.button);
                 TextView winnerTextView=(TextView) findViewById(R.id.textView);
-                winnerTextView.setText(winner+" HURRAY");
+                winnerTextView.setText(winner);
                 playAgainButton.setVisibility(View.VISIBLE);
                 winnerTextView.setVisibility(View.VISIBLE);
             }
@@ -64,6 +64,28 @@ public class MainActivity extends AppCompatActivity {
 
         winnerTextView.setVisibility(View.INVISIBLE);
 
+        GridLayout grid = (GridLayout) findViewById(R.id.gridLayout);
+
+        for(int ab=0 ; ab<grid.getChildCount() ; ab++){
+
+            ImageView counter=(ImageView) grid.getChildAt(ab);
+
+            counter.setImageDrawable(null);
+        }
+        for(int j=0 ; j<gameState.length ; j++) {
+            gameState[j]=2;
+        }
+
+        activePlayer=0;
+        gameActive=true;
+    }
+    public void rest(View view){Button  playAgainButton=(Button) findViewById(R.id.button);
+
+        TextView winnerTextView=(TextView) findViewById(R.id.textView);
+
+        playAgainButton.setVisibility(View.INVISIBLE);
+
+        winnerTextView.setVisibility(View.INVISIBLE);
         GridLayout grid = (GridLayout) findViewById(R.id.gridLayout);
 
         for(int ab=0 ; ab<grid.getChildCount() ; ab++){
