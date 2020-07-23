@@ -1,6 +1,7 @@
 package com.example.tictac;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.gridlayout.widget.GridLayout;
 
 import android.os.Bundle;
@@ -106,5 +107,24 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //translation annimatoin for grid layout
+        GridLayout gridLayout=(GridLayout)findViewById(R.id.gridLayout);
+        gridLayout.setX(-970);
+        gridLayout.animate().translationXBy(970).rotationBy(360*8).setDuration(2000);
+
+        //translation annimation for constraint layout
+        ConstraintLayout constrain=(ConstraintLayout) findViewById(R.id.constrain);
+        constrain.setX(-1000);
+        constrain.animate().translationXBy(1000) .setDuration(2000);
+
+        //translation annimation for rest button
+        Button  button2=(Button) findViewById(R.id.button2);
+        button2.setX(-2000);
+        button2.animate().translationXBy(2000).rotationBy(360*4).setDuration(2000);
+
+        //translate annimation for text view which shows tic tac heading
+        TextView textView2=(TextView)findViewById(R.id.textView2);
+        textView2.setX(-2000);
+        textView2.animate().translationXBy(2000).rotationBy(360*4).setDuration(2000);
     }
 }
