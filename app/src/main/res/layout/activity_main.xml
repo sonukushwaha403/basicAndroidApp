@@ -5,7 +5,7 @@
     android:id="@+id/constrain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_orange_dark"
+    android:background="#03A9F4"
     tools:context=".MainActivity">
 
     <androidx.gridlayout.widget.GridLayout
@@ -17,7 +17,7 @@
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="1dp"
         android:background="@drawable/board"
-        android:backgroundTint="@android:color/widget_edittext_dark"
+        android:backgroundTint="#FF5722"
         app:columnCount="3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -173,7 +173,8 @@
         android:backgroundTint="@color/colorAccent"
         android:onClick="rest"
         android:text="Rest game"
-        android:textSize="24sp"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/button"
         app:layout_constraintStart_toStartOf="@+id/button"
