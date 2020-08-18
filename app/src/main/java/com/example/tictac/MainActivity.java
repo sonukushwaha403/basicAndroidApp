@@ -42,9 +42,9 @@ public class MainActivity extends AppCompatActivity {
                 gameActive=false;
                 String winner = "";
                 if (activePlayer == 1) {
-                    winner = "  YELLOW HAS WON!!!!";
+                    winner = "  YELLOW HAS WON!!!!";  // it means winner is yellow guy
                 } else {
-                    winner = " RED HAS WON!!!!";
+                    winner = " RED HAS WON!!!!";      // it means winner is red guy
                 }
               //  Toast.makeText(this, winner, Toast.LENGTH_LONG).show();
                 Button playAgainButton=(Button) findViewById(R.id.button);
@@ -110,21 +110,21 @@ public class MainActivity extends AppCompatActivity {
         //translation annimatoin for grid layout
         GridLayout gridLayout=(GridLayout)findViewById(R.id.gridLayout);
         gridLayout.setX(-970);
-        gridLayout.animate().translationXBy(970).rotationBy(360*8).setDuration(2000);
+        gridLayout.animate().translationXBy(970).rotationBy(360*8).setDuration(2100);
 
         //translation annimation for constraint layout
         ConstraintLayout constrain=(ConstraintLayout) findViewById(R.id.constrain);
         constrain.setX(-1000);
-        constrain.animate().translationXBy(1000) .setDuration(2000);
+        constrain.animate().translationXBy(1000) .setDuration(2100);
 
         //translation annimation for rest button
         Button  button2=(Button) findViewById(R.id.button2);
-        button2.setX(-2000);
-        button2.animate().translationXBy(2000).rotationBy(360*4).setDuration(2000);
+        button2.setX(-2100);
+        button2.animate().translationXBy(2100).rotationBy(360*4).setDuration(2100);
 
         //translate annimation for text view which shows tic tac heading
         TextView textView2=(TextView)findViewById(R.id.textView2);
-        textView2.setX(-2000);
-        textView2.animate().translationXBy(2000).rotationBy(360*4).setDuration(2000);
+        textView2.setX(-2100);
+        textView2.animate().translationXBy(2000).rotationBy(360*4).setDuration(2100);
     }
 }
