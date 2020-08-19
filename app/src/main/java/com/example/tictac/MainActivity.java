@@ -42,9 +42,9 @@ public class MainActivity extends AppCompatActivity {
                 gameActive=false;
                 String winner = "";
                 if (activePlayer == 1) {
-                    winner = "  YELLOW HAS WON!!!!";
+                    winner = "  YELLOW HAS WON!!!!"; //it means yellow has won the match
                 } else {
-                    winner = " RED HAS WON!!!!";
+                    winner = " RED HAS WON!!!!";   // it means red has won the match
                 }
               //  Toast.makeText(this, winner, Toast.LENGTH_LONG).show();
                 Button playAgainButton=(Button) findViewById(R.id.button);
